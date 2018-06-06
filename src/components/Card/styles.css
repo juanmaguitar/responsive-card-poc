@@ -1,0 +1,39 @@
+.Card {
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .Card {
+    flex-direction: column;
+  }
+}
+
+.Card-media {
+  flex: 1;
+  flex-basis: 100px;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+}
+
+.Card-content {
+  flex: 2;
+  padding: 16px;
+}
+
+.Card-content p {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid blue;
+}
+
+.Card-media-image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  align-self: center;
+  flex: 0 0 auto;
+}

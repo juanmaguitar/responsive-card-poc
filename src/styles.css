@@ -1,0 +1,17 @@
+.App-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.App-list-item {
+  border: 1px solid red;
+  margin: 10px;
+  max-height: 200px;
+}
+
+@media (max-width: 500px) {
+  .App-list-item {
+    max-height: 500px;
+  }
+}
